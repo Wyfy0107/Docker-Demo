@@ -6,7 +6,8 @@ function App() {
 
   const getApi = async () => {
     try {
-      const result = await fetch('http://localhost:5001');
+      //this url does not work
+      const result = await fetch('http://my_api:3000');
       const data = await result.json();
       setResult(data);
       console.log(result);
